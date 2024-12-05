@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disscussed - Innovative EdTech Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Main Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #003366;
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav li {
+            font-weight: 400;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav li a:hover {
+            color: #ff9900;
+        }
+
+        .cta-btn {
+            background-color: #ff9900;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #e68900;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero-img {
+            max-width: 45%;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .hero-img img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Features Section */
+        .features {
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #ff9900;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-img {
+                max-width: 100%;
+                margin-top: 30px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Disscussed</h1>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="cta-btn">Start Learning</a>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero container">
+        <div class="hero-text">
+            <h2>Revolutionizing Learning for the Modern World</h2>
+            <p>Explore, Learn, and Grow with expert-curated resources and interactive learning tools tailored to your
+                needs.</p>
+            <a href="#" class="cta-btn">Get Started</a>
+        </div>
+        <div class="hero-img">
+            <img src="image Background Removed.png" alt="Learning Platform">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features container">
+        <div class="feature-card">
+            <h3>Comprehensive Resources</h3>
+            <p>Explore a wide range of subjects from technology to the arts, all in one place.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Interactive Q&A</h3>
+            <p>Ask questions and engage with experts and peers to accelerate your learning process.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Personalized Learning</h3>
+            <p>Customize your learning journey with tailored content and suggestions.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Disscussed. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
